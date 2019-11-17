@@ -1,0 +1,38 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory
+        app:key="maxesCategory"
+        app:title="One rep maxes">
+
+        <EditTextPreference
+            app:key="squatIn"
+            app:title="Squat"
+            app:useSimpleSummaryProvider="true"
+            />
+
+        <EditTextPreference
+            app:key="benchIn"
+            app:title="Bench"
+            app:useSimpleSummaryProvider="true"
+            />
+
+        <EditTextPreference
+            app:key="deadliftIn"
+            app:title="Deadlift"
+            app:useSimpleSummaryProvider="true"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="programSettings"
+        app:title="Program Settings">
+
+        <Preference
+            app:key="startDate"
+            app:title="Program starting date"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
