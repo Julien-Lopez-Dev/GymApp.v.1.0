@@ -20,9 +20,14 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 *                  to both of the startup fragments using shared prefs.
 *                  & Added listview in the settings fragment via adapter -- need to update look etc
 *
+*
+*   Sat 11/16/19 - Added Settings fragment via preferenceFragment, deleted old listview + adapter
+*
+*
 *                  Need to update values of inputFrag into SharedPref into Settings Frag
 *                  & create Progress Frag and add to bottomNav
 *                  & set Calendar Views + View Models
+*
 *
 *
 *
