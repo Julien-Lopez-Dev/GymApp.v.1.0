@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment {
 
 
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("prefs", Context.MODE_PRIVATE);
-        boolean firstStart = sharedPreferences.getBoolean("firstStart", false);
+        boolean firstStart = sharedPreferences.getBoolean("firstStart", true);
         if (firstStart == true){
             Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_welcomeFragment);
         }
