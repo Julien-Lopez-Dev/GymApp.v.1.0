@@ -56,11 +56,6 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
 
 
-
-
-
-
-
         //BottomNav Visibility
         navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
             @Override

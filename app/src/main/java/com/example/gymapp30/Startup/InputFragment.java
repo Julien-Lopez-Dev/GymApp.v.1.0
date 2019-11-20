@@ -48,7 +48,7 @@ public class InputFragment extends Fragment {
 
 
 
-                editor.putBoolean("firstStart", false);
+                editor.putBoolean("firstStart", true);
                 editor.apply();
 
 

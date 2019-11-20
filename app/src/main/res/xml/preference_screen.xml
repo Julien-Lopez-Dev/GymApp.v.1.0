@@ -1,23 +1,45 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-|
-    <Preference
-        app:key="MaxSettings"
+    <PreferenceCategory
         app:title="One Rep Maxes"
-        app:fragment="com.example.gymapp30.MaxPreferenceFragment"
-        />
+        app:icon="@drawable/ic_fitness_center_black_24dp">
 
-    <Preference
-        app:key="DateSettings"
-        app:title="Date"
-        />
+        <EditTextPreference
+            app:key="maxSquat"
+            app:title="Squat"/>
 
-    <Preference
-        app:key="VersionSettings"
-        app:title="Version"
-        app:summary="v.0.0.1"
-        />
+        <EditTextPreference
+            app:key="maxBench"
+            app:title="Bench"
+            />
+
+        <EditTextPreference
+            app:key="maxDeadlift"
+            app:title="Deadlift"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="Program Date">
+
+        <Preference
+            app:key="programStartDate"
+            app:title="Program start date"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="App Data">
+
+        <Preference
+            app:key="appVersion"
+            app:title="Application version"
+            />
+
+    </PreferenceCategory>
 
 
 

@@ -21,33 +21,7 @@ public class MaxPreferenceFragment extends PreferenceFragmentCompat {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        setPreferencesFromResource(R.xml.preference_maxes, rootKey);
 
-
-        EditTextPreference squatEditText = findPreference("squatIn");
-
-
-        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("prefs", Context.MODE_PRIVATE);
-        squatString = sharedPreferences.getString("squatIn", "");
-
-
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-
-        squatEditText.setText(squatString);
-
-
-
-        if (squatEditText != null){
-            squatEditText.setSummaryProvider(new Preference.SummaryProvider<EditTextPreference>() {
-                @Override
-                public CharSequence provideSummary(EditTextPreference preference) {
-                    if (TextUtils.isEmpty(squatString)){
-                        return "Not set";
-                    }else
-                        return squatString + "lbs";
-                }
-            });
-        }
 
     }
 }
